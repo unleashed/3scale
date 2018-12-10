@@ -1,3 +1,6 @@
 [submodule "apisonator"]
 	path = apisonator
 	url = https://github.com/3scale/apisonator
+[submodule "porta"]
+	path = porta
+	url = https://github.com/3scale/porta
