@@ -13,3 +13,8 @@ porta:
 .PHONY: s2i-openresty
 s2i-openresty:
 	$(MAKE) -C s2i-openresty TAG=1.13.6.2-1 DOCKER_OPTIONS=--no-cache build build-runtime tag
+
+.PHONY: zync
+zync:
+	s2i build zync centos/ruby-24-centos7:latest \
+		$(MYREPO_NAME):zync-$(THREESCALE_RELEASE)
