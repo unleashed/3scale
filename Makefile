@@ -9,3 +9,7 @@ apisonator:
 .PHONY: porta
 porta:
 	$(MAKE) -C porta/openshift/system NAME=$(MYREPO_NAME) VERSION=porta-${THREESCALE_RELEASE} build
+
+.PHONY: s2i-openresty
+s2i-openresty:
+	$(MAKE) -C s2i-openresty TAG=1.13.6.2-1 DOCKER_OPTIONS=--no-cache build build-runtime tag
