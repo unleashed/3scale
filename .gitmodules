@@ -1,0 +1,3 @@
+[submodule "apisonator"]
+	path = apisonator
+	url = https://github.com/3scale/apisonator
