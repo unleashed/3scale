@@ -7,3 +7,6 @@
 [submodule "s2i-openresty"]
 	path = s2i-openresty
 	url = https://github.com/3scale/s2i-openresty
+[submodule "zync"]
+	path = zync
+	url = https://github.com/3scale/zync
